@@ -19,7 +19,7 @@ selected_model = st.sidebar.selectbox(
 # Load selected model
 if api_key:
     LLM = ChatGroq(
-        api_key=api_key
+        api_key=api_key,
         model=selected_model)
 else:
     print("Please past your API")
